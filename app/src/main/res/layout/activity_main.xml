@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/fondooo2"
+    tools:context="app.ejemplo.juego3enraya.MainActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="2dp">
+
 
     <Button
         android:id="@+id/btn1"
@@ -126,15 +128,53 @@
 
     <Button
         android:id="@+id/btnJugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="167dp"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="33dp"
+        android:background="#DD4ADC"
         android:onClick="JugarDeNuevo"
         android:text="Jugar de Nuevo"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn8"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalir"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="34dp"
+        android:background="#4CAF50"
+        android:onClick="salirApp"
+        android:text="Salir"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnJugar"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="61dp"
+        android:text="@string/txtTitulo"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
